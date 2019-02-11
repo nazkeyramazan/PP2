@@ -22,6 +22,17 @@ namespace Task2
         this.ID = ID;
         this.year = year;
     }
+
+
+    public void increment()
+        {
+
+        }
+
+    public string getName()
+        {
+            return this.name;
+        }
     public void PrintInfo()
     {
         Console.WriteLine(name + " " + ID + " " + year);

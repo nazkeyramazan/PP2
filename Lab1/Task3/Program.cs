@@ -20,13 +20,6 @@ namespace Task3
             {
                 a[i] = int.Parse(nums[i]); // ввод элементов массива
             }
-
-            /*for (i = 0; i < a.Length; i++)
-            {
-                int temp = a[i];
-                new_array[2 * i] = doub[2 * i + 1] = a[i]; 
-            }*/
-
             for (i = 0; i < a.Length; i++)
             {
                 Console.Write(a[i] + " " + a[i] + " ");// вывод на консоль решение задачи
