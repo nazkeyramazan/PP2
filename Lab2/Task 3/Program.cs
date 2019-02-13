@@ -8,31 +8,35 @@ namespace Task_3
 {
     class Program
     {
-
-        public static void p(int level)
+        public static void f(DirectoryInfo dir , int lvl)
         {
-            for (int i = 0; i < level; i++)
-                Console.Write("____");
-        }
-        public static void f(DirectoryInfo dir, int level)
-        {
+            
             foreach (DirectoryInfo d in dir.GetDirectories())
             {
-                p(level);
-                Console.WriteLine(d.Name);
-                f(d, level + 1);
+                for (int i = 0; i < lvl; i++)
+                Console.Write("   ");//отступ
+                Console.WriteLine(d.Name); // консоль выводит имя папки
+                f(d, lvl + 1); // удваивание отступа
             }
             foreach (FileInfo f in dir.GetFiles())
             {
-                p(level);
-                Console.WriteLine(f.Name);
+                for (int i = 0; i < lvl; i++)
+                Console.Write("   ");//отступ 
+                Console.WriteLine(f.Name);//консоль выводит имя файла
             }
         }
         static void Main(string[] args)
         {
-            DirectoryInfo dir = new DirectoryInfo("/Users/LENOVO/Desktop/PP2/Lab2");
-            f(dir, 0);
-            Console.ReadKey();
+            DirectoryInfo dir = new DirectoryInfo("C:/Users/LENOVO/Desktop/PP2/Lab2");//указывает путь к папке
+            f(dir, 0);//вызывает ранее написанную функцию
+            Console.ReadKey();// пока не нажмете любую клаву
+          
         }
     }
 }
+
+
+
+
+
+

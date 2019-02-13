@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace Task2
 {
     class Program
@@ -11,24 +11,15 @@ namespace Task2
         static void Main(string[] args)
         {
 
-            string line = System.IO.File.ReadAllText(@"C:/Users/LENOVO/Desktop/PP2/Lab2/input.txt");
-
-            //char[] charsToTrim = { '*', ' ', '\'' };
-            //string result = line.Trim(charsToTrim);
-
-
-            string[] p = line.Split(new char[] { ' ', ','});
-            string prime = "";
-            for (int i = 0; i < p.Length; i++)
+            string line = File.ReadAllText(@"C:/Users/LENOVO/Desktop/PP2/Lab2/input.txt"); //  читает текст
+            string[] p = line.Split(new char[] { ' ', ','}); // разделяет по указанным значкам
+            string prime = ""; // новая переменная
+            for (int i = 0; i < p.Length; i++)//пробегается по массиву
             {
-                int cnt = 0;
+                int cnt = 0; // переменная
                 Console.Write(p[i]+ " ");
-                int b = Convert.ToInt32(p[i]);
-
-                
-
+                int b = Convert.ToInt32(p[i]);//переводит в числу
                 for (int j = 1; j < b; j++)
-
                 {
                     if (b % j == 0)
                         cnt++;
@@ -43,7 +34,7 @@ namespace Task2
                     prime += " ";
                 }
             }
-            System.IO.File.WriteAllText(@"C:/Users/LENOVO/Desktop/PP2/Lab2/output.txt", prime);
+            File.WriteAllText(@"C:/Users/LENOVO/Desktop/PP2/Lab2/output.txt", prime);
         }
     }
 }
