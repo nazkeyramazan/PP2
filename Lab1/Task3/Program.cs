@@ -11,15 +11,14 @@ namespace Task3
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine()); //ввод числа
-            int i;
+            int i;//переменная
             int[] a = new int[n]; //создвние массива
 
-            string[] nums = Console.ReadLine().Split(new char[] { ' ' });
-
+            string[] nums = Console.ReadLine().Split(new char[] { ' ' });// ввод элементов массива
+            // сплит разделяет ввеенные числа
             for (i = 0; i < a.Length; i++)
-            {
-                a[i] = int.Parse(nums[i]); // ввод элементов массива
-            }
+                a[i] = int.Parse(nums[i]);
+
             for (i = 0; i < a.Length; i++)
             {
                 Console.Write(a[i] + " " + a[i] + " ");// вывод на консоль решение задачи

@@ -5,3 +5,10 @@ C:\Users\LENOVO\source\repos\Lab1\Task2\obj\Debug\Task2.csprojAssemblyReference.
 C:\Users\LENOVO\source\repos\Lab1\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\source\repos\Lab1\Task2\obj\Debug\Task2.exe
 C:\Users\LENOVO\source\repos\Lab1\Task2\obj\Debug\Task2.pdb
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\bin\Debug\Task2.exe.config
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\bin\Debug\Task2.exe
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\bin\Debug\Task2.pdb
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\obj\Debug\Task2.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\obj\Debug\Task2.exe
+C:\Users\LENOVO\Desktop\PP2\Lab1\Task2\obj\Debug\Task2.pdb

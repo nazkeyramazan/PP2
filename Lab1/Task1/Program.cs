@@ -17,7 +17,7 @@ namespace Task1
             string[] nums = Console.ReadLine().Split(new char[] { ',', ';', '#', ' ' });// ввод элементов в массив
             // сплит разделяет введенные числа
             for (i = 0; i < arr.Length; i++)
-                arr[i] = int.Parse(nums[i]);
+                arr[i] = int.Parse(nums[i]);// делит строку на подстроки
 
             for (i = 0; i < arr.Length; i++)
             {

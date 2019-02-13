@@ -11,7 +11,7 @@ namespace Task4
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());//создвем переменное 
-            int i, j;
+            int i, j;//переменные
             int[,] a = new int[n, n];// создаем двухмерный массив
 
 
@@ -21,11 +21,11 @@ namespace Task4
                 {
                     if (i == j || i > j) // если ай и джей совпадает указанному условию то в консоле выводится решение
                     {
-                        Console.Write("[*]" + ' ');
+                        Console.Write("[*]" + ' ');//вывод на экран
                     }
 
                 }
-                Console.WriteLine();
+                Console.WriteLine();//след запись на новой строке
             }
         }
     }

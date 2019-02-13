@@ -11,35 +11,35 @@ namespace Task2
     public string ID;
     public int year;
 
-    public Student(string name, string ID)
+    public Student(string name, string ID, int year) //создание нового класса под имененм студент
     {
-        this.name = name;
-        this.ID = ID;
-    }
-    public Student(string name, string ID, int year)
-    {
-        this.name = name;
-        this.ID = ID;
-        this.year = year;
+        this.name = name; //данные класса студент 
+        this.ID = ID; //
+        this.year = year;//
     }
 
 
     public void increment()
         {
-
+            year++;//увеличивает год на единицу
         }
 
-    public string getName()
+    public void getName()
         {
-            return this.name;
+            Console.WriteLine("Имя " + name);//выводит на консоль имя студента
+            return ;
         }
-    public void PrintInfo()
-    {
-        Console.WriteLine(name + " " + ID + " " + year);
-        year++;
-        Console.WriteLine(name + " " + ID + " " + year);
-
-    }
+        public void getID()
+        {
+            Console.WriteLine("ID " + ID);//выводит на консоль АЙДИ студента
+            return;
+        }
+        public void getYear()
+        {
+            Console.WriteLine("Год обучения " + year);//выводит на консоль год обучения студента
+            return;
+        }
+        
 }
 
     class Program
@@ -47,9 +47,14 @@ namespace Task2
         
         static void Main(string[] args)
         {
-            Student s = new Student("Ramazan" , "18BD143343" , 1);
-            s.PrintInfo();
-
+            Student s = new Student("Ramazan" , "18BD143343" , 1);//присвоение значения для данного класса
+            s.getName(); // использование ранее написанного кода 
+            s.getID();//
+            s.getYear();//
+            s.increment();//
+            s.getName();//
+            s.getID();//
+            s.getYear();//
         }
     }
 }
