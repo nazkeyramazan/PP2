@@ -15,7 +15,7 @@ namespace Task1
         public Complex() // new constructor with less parameters
         {
             
-        }
+        }   
         
         public void PrintInfo()
         {

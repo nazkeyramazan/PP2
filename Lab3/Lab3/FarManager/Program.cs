@@ -51,7 +51,7 @@ namespace FarManager
         {
             static void Main(string[] args)
             {
-                DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\Users\LENOVO\Desktop\folder");
+                DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\Users\LENOVO\Desktop\PP2");
                 Stack<Layer> history = new Stack<Layer>();
                 history.Push(new Layer(directoryInfo.GetFileSystemInfos()));
                 bool escape = false;

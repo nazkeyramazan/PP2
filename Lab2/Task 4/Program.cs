@@ -13,7 +13,7 @@ namespace Task_4
             string originalPath = @"C:\Users\LENOVO\Desktop\PP2\Lab2\task4.txt";
             string copyPath = @"C:\Users\LENOVO\Desktop\PP2\Lab2\Task 4\task4.txt";
             FileStream fs = new FileStream(originalPath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-                StreamWriter sr = new StreamWriter(fs);
+            StreamWriter sr = new StreamWriter(fs);
             sr.Write("end of second lab works");
             sr.Close();
             fs.Close();

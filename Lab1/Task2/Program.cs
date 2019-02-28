@@ -10,20 +10,21 @@ namespace Task2
     public string name;
     public string ID;
     public int year;
-
-    public Student(string name, string ID, int year) //создание нового класса под имененм студент
+        public Student(string name , string ID)
+        {
+            this.name = name;
+            this.ID = ID;
+        }
+    public Student(string name, string ID, int year) //создание нового к под имененм студент
     {
         this.name = name; //данные класса студент 
         this.ID = ID; //
         this.year = year;//
     }
-
-
-    public void increment()
+        public void increment()
         {
             year++;//увеличивает год на единицу
         }
-
     public void getName()
         {
             Console.WriteLine("Имя " + name);//выводит на консоль имя студента

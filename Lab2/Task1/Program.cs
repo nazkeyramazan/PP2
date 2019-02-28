@@ -16,6 +16,7 @@ namespace Task1
         }
         static void Main(string[] args)
         {
+            
             string p = File.ReadAllText(@"C:/Users/LENOVO/Desktop/PP2/Lab2/palindrome.txt");//читает текст и передает данные к стрингу
             if (p.Equals(reverse (p))) // сравнивает текст и обратный текст
             {
